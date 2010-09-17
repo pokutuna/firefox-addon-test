@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<prefwindow id="snapshooter.pref" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="Snapshooter setting" bottons="accept,cancel">
+  <prefpane>
+    <preferences>
+      <preference id="extensions.snapshooter.snapshooter" name="extensions.snapshooter.snapshooter" type="string" />
+    </preferences>
+    <hbox>
+      <radiogroup
+         preference="extensions.snapshooter.snapshooter">
+        <radio value="0" label="こんにちは１" />
+        <radio value="1" label="こんにちは２" />
+      </radiogroup>
+    </hbox>
+  </prefpane>
+</prefwindow>

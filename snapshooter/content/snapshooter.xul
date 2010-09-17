@@ -1,0 +1,8 @@
+<?xml version="1.0"?>  
+
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script type="application/x-javascript" src="chrome://snapshooter/content/snapshooter.js" />
+<statusbar id="status-bar">
+<statusbarpanel id="my-panel" label="Snapshooter for UIST2010" onmousedown='Snapshooter.alert("Hello")'/>
+</statusbar>
+</overlay>

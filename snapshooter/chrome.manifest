@@ -1,0 +1,2 @@
+content snapshooter content/
+overlay chrome://browser/content/browser.xul chrome://snapshooter/content/snapshooter.xul
