@@ -1,0 +1,8 @@
+{
+    "author": "pokutuna", 
+    "version": "0.0.1", 
+    "dependencies": [
+        "jetpack-core"
+    ], 
+    "description": "Output url & snapshot image"
+}

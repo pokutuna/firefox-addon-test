@@ -1,0 +1,27 @@
+*** tabs.js.bak	2010-09-21 06:33:30.710080311 +0900
+--- tabs.js	2010-09-21 06:40:34.962085522 +0900
+***************
+*** 124,134 ****
+    var thumbnail = window.document.createElementNS("http://www.w3.org/1999/xhtml", "canvas");
+    thumbnail.mozOpaque = true;
+    var window = tabEl.linkedBrowser.contentWindow;
+!   thumbnail.width = Math.ceil(window.screen.availWidth / 5.75);
+    var aspectRatio = 0.5625; // 16:9
+    thumbnail.height = Math.round(thumbnail.width * aspectRatio);
+    var ctx = thumbnail.getContext("2d");
+!   var snippetWidth = window.innerWidth * .6;
+    var scale = thumbnail.width / snippetWidth;
+    ctx.scale(scale, scale);
+    ctx.drawWindow(window, window.scrollX, window.scrollY, snippetWidth, snippetWidth * aspectRatio, "rgb(255,255,255)");
+--- 124,134 ----
+    var thumbnail = window.document.createElementNS("http://www.w3.org/1999/xhtml", "canvas");
+    thumbnail.mozOpaque = true;
+    var window = tabEl.linkedBrowser.contentWindow;
+!   thumbnail.width = Math.ceil(window.screen.availWidth);
+    var aspectRatio = 0.5625; // 16:9
+    thumbnail.height = Math.round(thumbnail.width * aspectRatio);
+    var ctx = thumbnail.getContext("2d");
+!   var snippetWidth = window.innerWidth;
+    var scale = thumbnail.width / snippetWidth;
+    ctx.scale(scale, scale);
+    ctx.drawWindow(window, window.scrollX, window.scrollY, snippetWidth, snippetWidth * aspectRatio, "rgb(255,255,255)");
