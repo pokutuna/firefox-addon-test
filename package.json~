@@ -1,0 +1,10 @@
+{
+    "name": "Snapshooter", 
+    "author": "pokutuna", 
+    "version": "0.0.1", 
+    "dependencies": [
+        "jetpack-core"
+    ], 
+    "id": "jid0-XNE63fZpQe6bXlEBElxXzAQRBMs", 
+    "description": "Output url & snapshot image"
+}

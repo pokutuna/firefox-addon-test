@@ -1,0 +1,25 @@
+var tabs = require("tabs");
+
+// open a new tab and make it active
+tabs.open("http://www.mysite.com");
+
+// in a new window
+tabs.open({
+  url: "http://www.mysite.com",
+  inNewWindow: true
+});
+
+// opened in the background
+tabs.open({
+  url: "http://www.mysite.com",
+  inBackground: true
+});
+
+// an onOpen listener
+tabs.open({
+  url: "http://www.mysite.com",
+  onOpen: function(tab) {
+    // do stuff like listen for content
+    // loading.
+  }
+});
