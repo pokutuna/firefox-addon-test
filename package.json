@@ -1,9 +1,9 @@
 {
-    "author": "pokutuna", 
+    "id": "jid0-mh43GF4eKs1o1BMUe9XYA3JRa5E", 
     "version": "0.0.1", 
+    "description": "Output url & snapshot image", 
     "dependencies": [
         "jetpack-core"
     ], 
-    "id": "jid0-XNE63fZpQe6bXlEBElxXzAQRBMs", 
-    "description": "Output url & snapshot image"
+    "author": "pokutuna"
 }
